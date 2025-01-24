@@ -1,0 +1,16 @@
+﻿sample,fastq_1,fastq_2,strandedness
+WT_0_3,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2707_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2707_R2.fastq.gz,unstranded
+WT_0_1,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2708_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2708_R2.fastq.gz,unstranded
+WT_0_2,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2710_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2710_R2.fastq.gz,unstranded
+WT_12_3,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2758_R1.fastq.gz ,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2758_R2.fastq.gz,unstranded
+WT_12_1,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2762_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2762_R2.fastq.gz,unstranded
+WT_12_2,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2765_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2765_R2.fastq.gz,unstranded
+WT_24_3,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2730_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2730_R2.fastq.gz,unstranded
+WT_24_2,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2732_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2732_R2.fastq.gz,unstranded
+WT_24_1,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2741_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2741_R2.fastq.gz,unstranded
+WT_48_1,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2731_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2731_R2.fastq.gz,unstranded
+WT_48_3,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2737_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2737_R2.fastq.gz,unstranded
+WT_48_2,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2738_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2738_R2.fastq.gz,unstranded
+WT_96_2,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2706_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2706_R2.fastq.gz,unstranded
+WT_96_1,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2715_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2715_R2.fastq.gz,unstranded
+WT_96_3,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2716_R1.fastq.gz,/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse/JR2716_R2.fastq.gz,unstranded
