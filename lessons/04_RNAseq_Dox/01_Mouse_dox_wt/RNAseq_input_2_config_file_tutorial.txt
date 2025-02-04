@@ -1,0 +1,7 @@
+##RNAseq input 2: .config file !
+#url: https://www.youtube.com/watch?v=voPTc6NC-Eg
+
+##find the nextflow.config file 
+#url: https://rinnformatics.colorado.edu:9001/browser/rinn-public/Mouse_Long%2F
+#put in same folder that will run nextflow in! (genehomics/MASTER_CLASS/RNAseq_2/)
+#update so executor = local and memory = 2GB
