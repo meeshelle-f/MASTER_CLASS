@@ -1,0 +1,71 @@
+##INSTALL JAVA
+
+#url: https://www.youtube.com/watch?v=GfWkLo5vzME
+#install java on windows using the .exe, which allows us to specify path installation 
+#java url: https://www.oracle.com/java/technologies/downloads/#jdk21-windows
+
+#in bash:
+which java #/c/Program Files/Common Files/Oracle/Java/javapath/java
+java -version #java version "21.0.6" 2025-01-21 LTS
+
+#search environment variables in windows search bar 
+#environment variables 
+#system variables 
+#Path 
+#Edit
+#New 
+#C:\Program Files\Java\jdk-21\bin
+#save and restart bash 
+#where java #C:\Program Files\Java\jdk-21\bin\java.exe, perfect! 
+$ export JAVA_HOME="/c/Program Files/Java/jdk-21"
+export PATH="$JAVA_HOME/bin:$PATH"
+##INSTALL NEXTFLOW 
+
+#url: https://github.com/boulderrinnlab/MASTER_CLASS/blob/main/lessons/03_Nextflow/03_windows_install_nextflow.Rmd
+#in bash:
+cd ~/
+mkdir bin 
+cd bin 
+pwd # /c/Users/fmich/bin 
+#had to run this line in command prompt, not bash: 
+curl -s https://get.nextflow.io  #install nextflow in separate user/bin folder
+#go to file explorer and copy-past nextflow into the bin folder... 
+#go back go bash
+nextflow -version #hmmm no path found! 
+#environment variables 
+#edit system environment variables 
+#Path 
+#Edit 
+#New 
+#type in /c/Users/fmich/bin
+
+##2/4/2024, look at nextflow requirements 
+#https://training.nextflow.io/envsetup/02_local/#requirements
+#what version of java do i have and where is it located? repeat for all nextflow requirements 1) java 2) bash 3) Git 4) Docker
+#open bash 
+#java --version 
+#which java 
+#java location: /c/Program Files/Java/jdk-21/bin/java
+#git location: /mingw64/bin/git
+#bash location: /usr/bin/bash
+
+#Download and install Docker, login to account on desktop
+#which docker 
+#docker location: /c/Program Files/Docker/Docker/resources/bin/docker
+
+#Now for java...
+#system env variables MUST HAVE "" on them or else they won't work!!!
+#Ensure is in path env sys: "C:\Users\fmich\bin\Java\jdk-21\bin"
+#Ensure JAVA_HOME new env sys variable created: "C:\Users\fmich\bin\Java\jdk-21\"
+#restart bash 
+echo $JAVA_HOME
+cd bin #where java is located. 
+curl -s https://get.nextflow.io | bash #This will create the nextflow executable in the current directory.
+chmod +x nextflow #Make Nextflow executable
+#Move Nextflow into an executable path
+#go back to edit env variables --> PATH --> edit -->New --> "C:\Users\fmich\bin\.nextflow"
+#restart bash 
+which nextflow #/c/Users/fmich/bin/nextflow
+nextflow -version # 24.10.4 build 5934
+
+

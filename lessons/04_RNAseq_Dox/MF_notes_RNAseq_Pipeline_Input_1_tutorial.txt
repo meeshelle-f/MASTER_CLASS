@@ -1,0 +1,63 @@
+###RNAseq Pipeline Input 1 tutorial https://www.youtube.com/watch?v=SxroZ8T6j4U
+
+##DOWNLOAD .FASTQs
+#https://rinnformatics.colorado.edu:9001/browser/rinn-public/Mouse_Long%2FReads%2F
+#create RNAseq_2 and DATA/mouse_wt_long_timecourse in MASTER_CLASS folder
+
+##CREATE FOLDERS
+#!/bin/bash
+cd MASTER_CLASS
+mkdir RNAseq_2 #create space for pipeline to run 
+cd ..
+mkdir DATA/mouse_wt_long_timecourse #where store downloaded samples
+cd ~/
+
+##CREATE SAMPLE SHEET
+#ref sample sheet: https://github.com/boulderrinnlab/MASTER_CLASS/blob/main/lessons/04_RNAseq_Dox/01_Mouse_dox_wt/01
+_NF_CORE_RNAseq_samplesheet.Rmd
+#update sample sheet template with local path
+#save as RNAseq_2/sample_sheet.csv
+
+## MOVE FASTQs
+#!/bin/bash
+cd Downloads/
+ls #notice is in fastq.gz format, perfect!
+# Source directory
+SOURCE_DIR="/c/Users/fmich/Downloads"
+# Destination directory
+DEST_DIR="/c/Users/fmich/genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse"
+# Copy all .fastq.gz files from the source to the destination
+mv "$SOURCE_DIR"/*.fastq.gz "$DEST_DIR"
+cd ~/
+cd genehomics/MASTER_CLASS/DATA/mouse_wt_long_timecourse
+ls | wc -l #26/30 files.. JR2730 and JR2731 R1 & R2 are not downloading. Double check and rerun. should be (5 samples) * (3 reps) = 30. 
+#download issue on chrome, used Microsoft Edge and had no issues 
+ls | wc -l #30 yay! 
+
+
+###RNAseq Create Input 2: .config file !
+#url: https://www.youtube.com/watch?v=voPTc6NC-Eg
+
+##DOWNLOAD NEXTFLOW.CONFIG 
+#url: https://rinnformatics.colorado.edu:9001/browser/rinn-public/Mouse_Long%2F
+#put in same folder that will run nextflow in! (genehomics/MASTER_CLASS/RNAseq_2/)
+#update so executor = local and memory = 4GB
+
+
+###Last Step to Run RNAseq Pipeline: Shell Script
+#url: https://www.youtube.com/watch?v=O-GkY73d2Wc
+
+##DOWNLOAD GRCm38.p6.genome.fa and gencode.vM25.annotation.gtf 
+#put in same folder that will run nextflow in! (genehomics/MASTER_CLASS/RNAseq_2/)
+#update the 03_shell_script.Rmd file to my specifications, including using docker instead of singularity, and local path changes. 
+
+
+###It Is Time to RUN the RNAseq Pipeline !!
+#url: https://www.youtube.com/watch?v=aaV7Xd16a34
+
+#in bash:
+cd RNAseq_2
+nano timecourse.sh
+#copy and paste the bottom of bash code here, CTRL-X, y, enter
+cat timecourse.sh
+sbatch timecourse.sh
